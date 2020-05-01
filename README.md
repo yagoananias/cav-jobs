@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center">
-    <img alt="be the hero" src="https://res.cloudinary.com/yagoananias/image/upload/v1588323945/mock-jobs_brkype.png" />
+    <img alt="be the hero" src="https://res.cloudinary.com/yagoananias/image/upload/v1588324560/mock-jobs_dfc3ug.png" />
     <br>
     Mobile & Desktop
 </h4>
