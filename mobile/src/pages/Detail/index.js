@@ -12,8 +12,8 @@ import styles from './styles'
 export default function Detail() {
   const navigation = useNavigation();
   const route = useRoute();
-  const incident = route.params.incident;
-  const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso "${incident.title}" com o valor de ${Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(incident.value)}.`;
+  const job = route.params.job;
+  const message = `Olá ${job.name}, estou entrando em contato pois tenho interesse no job de "${job.title}" com o valor de ${Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(job.value)}.`;
 
   function navigateBack() {
     navigation.goBack()
@@ -21,14 +21,14 @@ export default function Detail() {
 
   function sendMail() {
     MailComposer.composeAsync({
-      subject: `Herói do caso: ${incident.title}`,
-      recipients: [incident.email],
+      subject: `Candidato: ${job.title}`,
+      recipients: [job.email],
       body: message,
     })
   }
 
   function sendWhatsapp() {
-    Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}?text=${message}`);
+    Linking.openURL(`whatsapp://send?phone=${job.whatsapp}?text=${message}`);
   }
 
   return (
@@ -36,29 +36,29 @@ export default function Detail() {
       <View style={styles.header}>
         <Image source={logo}/>
         <TouchableOpacity onPress={ navigateBack }>
-          <Feather name="arrow-left" size={28} color="#E82041" />
+          <Feather name="arrow-left" size={28} color="#7C8083" />
         </TouchableOpacity>
       </View>
 
-      <View style={styles.incident}>
-        <Text style={[styles.incidentProperty, { marginTop: 0 }]}>ONG:</Text>
-        <Text style={styles.incidentValue}>{incident.name} de {incident.city} - {incident.uf} </Text>
+      <View style={styles.job}>
+        <Text style={[styles.jobProperty, { marginTop: 0 }]}>PRODUTOR:</Text>
+        <Text style={styles.jobValue}>{job.name} de {job.city} - {job.uf} </Text>
 
-        <Text style={styles.incidentProperty}>CASO:</Text>
-        <Text style={styles.incidentValue}>{incident.title}</Text>
+        <Text style={styles.jobProperty}>JOB:</Text>
+        <Text style={styles.jobValue}>{job.title}</Text>
 
-        <Text style={styles.incidentProperty}>VALOR:</Text>
-        <Text style={styles.incidentValue}>
+        <Text style={styles.jobProperty}>VALOR:</Text>
+        <Text style={styles.jobValue}>
           {Intl.NumberFormat('pt-BR', {
             style: 'currency',
             currency: 'BRL'
-          }).format(incident.value)}
+          }).format(job.value)}
         </Text>
       </View>
 
       <View style={styles.contactBox}>
-        <Text style={styles.heroTitle}>Salve o dia!</Text>
-        <Text style={styles.heroTitle}>Seja o herói desse caso.</Text>
+        <Text style={styles.heroTitle}>Vamos ao trabalho!</Text>
+        <Text style={styles.heroTitle}>Mande um alô.</Text>
 
         <Text style={styles.heroDescription}>Entre em contato:</Text>
 

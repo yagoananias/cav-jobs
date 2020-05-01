@@ -14,7 +14,7 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
 
-  incident: {
+  job: {
     padding: 24,
     borderRadius: 8,
     backgroundColor: '#fff',
@@ -22,14 +22,14 @@ export default StyleSheet.create({
     marginTop: 48, 
   },
 
-  incidentProperty: {
+  jobProperty: {
     fontSize: 14,
     color: '#41414d',
     fontWeight: 'bold',
     marginTop: 24,
   },
 
-  incidentValue: {
+  jobValue: {
     marginTop: 8,
     fontSize: 15,
     color: '#737380',
@@ -62,7 +62,7 @@ export default StyleSheet.create({
   },
 
   action: {
-    backgroundColor: '#E02041',
+    backgroundColor: '#ff9201',
     borderRadius: 8,
     height: 50,
     width: '48%',

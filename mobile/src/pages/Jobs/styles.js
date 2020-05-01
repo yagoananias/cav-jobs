@@ -37,24 +37,24 @@ export default StyleSheet.create({
     color: '#737380'
   },
 
-  incidentList: {
+  jobList: {
     marginTop: 32,
   },
 
-  incident: {
+  job: {
     padding: 24,
     borderRadius: 8,
     backgroundColor: '#fff',
     marginBottom: 16,
   },
 
-  incidentProperty: {
+  jobProperty: {
     fontSize: 14,
     color: '#41414d',
     fontWeight: 'bold',
   },
 
-  incidentValue: {
+  jobValue: {
     marginTop: 8,
     fontSize: 15,
     marginBottom: 24,
@@ -68,7 +68,7 @@ export default StyleSheet.create({
   },
 
   detailsButtonText: {
-    color: '#e02041',
+    color: '#ff9201',
     fontSize: 15,
     fontWeight: 'bold',
   }
