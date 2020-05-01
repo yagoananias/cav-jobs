@@ -50,7 +50,7 @@ export default function Register() {
           </p>
 
           <Link className="back-link" to="/">
-            <FiArrowLeft size={16} color="#e02041" />
+            <FiArrowLeft size={16} color="#7C8083" />
             Voltar                        
           </Link>
         </section>

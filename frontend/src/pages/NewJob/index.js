@@ -49,7 +49,7 @@ export default function NewJob() {
           </p>
 
           <Link className="back-link" to="/profile">
-            <FiArrowLeft size={16} color="#e02041" />
+            <FiArrowLeft size={16} color="#7C8083" />
             Voltar                        
           </Link>
         </section>
