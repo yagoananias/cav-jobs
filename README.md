@@ -1,11 +1,11 @@
 <h1 align="center">
-    <img alt="Cav Jobs" src="https://res.cloudinary.com/yagoananias/image/upload/v1588324157/logo_blya34.png" />
+    <img alt="Cav Jobs" src="https://res.cloudinary.com/yagoananias/image/upload/v1588324157/assets/logo_blya34.png" />
     <br>
     Job app of CAV from São Bernardo do Campo
 </h1>
 
 <h4 align="center">
-    <img alt="be the hero" src="https://res.cloudinary.com/yagoananias/image/upload/v1588324560/mock-jobs_dfc3ug.png" />
+    <img alt="be the hero" src="https://res.cloudinary.com/yagoananias/image/upload/v1588324560/github%20mocks/mock-jobs_dfc3ug.png" />
     <br>
     Mobile & Desktop
 </h4>
