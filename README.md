@@ -41,10 +41,10 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/lukemorales/gostack-fullstack-meetapp
+$ git clone https://github.com/yagoananias/cav-jobs
 
 # Go into the repository
-$ cd gostack-fullstack-meetapp
+$ cd cav-jobs
 
 # Install dependencies for the backend
 $ cd backend
